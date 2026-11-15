@@ -8,9 +8,9 @@ services:
     environment:
       NODE_ENV: production
       COOKIE_SECURE: "1"
-      # İlk admin (hash `npm run admin:create -- --hash` ilə alınır). Boş qalsa, konteynerdə CLI ilə yaradın.
+      # İlk admin: hash `npm run admin:create -- --hash | base64 -w0`. Yalnız admin yoxdursa yaradılır.
       ADMIN_USERNAME: ${ADMIN_USERNAME:-}
-      ADMIN_PASSWORD_HASH: ${ADMIN_PASSWORD_HASH:-}
+      ADMIN_PASSWORD_HASH_B64: ${ADMIN_PASSWORD_HASH_B64:-}
     volumes:
       - yuxa-data:/app/data
 

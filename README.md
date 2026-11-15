@@ -29,7 +29,7 @@ HOST=127.0.0.1 PORT=8787 npm start    # http://127.0.0.1:8787  və  /admin
 Lokal yoxlama üçün admin məlumatı: `~/.hermes/secrets/yuxa-admin.env` (chmod 600).
 `http://` üzərində lokal işlədəndə `127.0.0.1` istifadə edin (Secure cookie Chrome-da localhost üçün işləyir). Başqa HTTP host-da test üçün `COOKIE_SECURE=0`.
 
-Mühit dəyişənləri: `PORT` (8787), `HOST` (127.0.0.1), `DATA_DIR` (`./data`), `COOKIE_SECURE` (1), `NIGHTLY_BACKUP` (1), `ADMIN_USERNAME` + `ADMIN_PASSWORD_HASH` (startda admini yaradır/yeniləyir; hash: `printf '%s' "$PAROL" | npm run admin:create -- --hash`).
+Mühit dəyişənləri: `PORT` (8787), `HOST` (127.0.0.1), `DATA_DIR` (`./data`), `COOKIE_SECURE` (1), `NIGHTLY_BACKUP` (1), `ADMIN_USERNAME` + `ADMIN_PASSWORD_HASH_B64` (base64, compose `$` təhlükəsiz; yalnız admin yoxdursa yaradılır) (hash: `printf '%s' "$PAROL" | npm run admin:create -- --hash | base64 -w0`).
 
 ## Yoxlama
 
@@ -97,5 +97,5 @@ Hələ deploy edilməyib. Lazım olanlar:
 1. Coolify-da yeni Application: bu repo, build pack **Dockerfile** (və ya docker-compose.yml), port **8787**.
 2. Domen: `https://yuxa.az` (DNS artıq serverə baxır), Coolify/Traefik SSL verir.
 3. Persistent volume: `/app/data` (baza, şəkillər, backup).
-4. Env: `ADMIN_USERNAME`, `ADMIN_PASSWORD_HASH` (və ya deploydan sonra konteynerdə `node dist-server/server/cli/admin-create.js admin`, parol stdin-dən).
+4. Env: `ADMIN_USERNAME`, `ADMIN_PASSWORD_HASH_B64` (base64, compose `$` təhlükəsiz; yalnız admin yoxdursa yaradılır) (və ya deploydan sonra konteynerdə `node dist-server/server/cli/admin-create.js admin`, parol stdin-dən).
 5. Deploydan sonra admin → Parametrlər → "Saytın ünvanı" `https://yuxa.az` olsun (QR-lar buna görə yaranır), nümunə məhsulları real menyu ilə əvəz edin, Masalar → Çap səhifəsi.

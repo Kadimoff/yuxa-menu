@@ -36,8 +36,16 @@ export async function buildApp(o: AppOptions): Promise<FastifyInstance> {
   app.decorate('opts', o);
   app.addHook('onClose', async () => db.close());
 
-  if (process.env.ADMIN_USERNAME && process.env.ADMIN_PASSWORD_HASH?.startsWith('scrypt$')) {
-    upsertAdmin(db, process.env.ADMIN_USERNAME, process.env.ADMIN_PASSWORD_HASH);
+  // İlk admin env-dən: ADMIN_PASSWORD_HASH_B64 (compose `$` interpolyasiyasından qorunur) və ya ADMIN_PASSWORD_HASH.
+  // Yalnız bu adda admin YOXDURSA yaradılır, panelde dəyişdirilmiş parolu restartda üstələmir.
+  {
+    const b64 = process.env.ADMIN_PASSWORD_HASH_B64?.trim();
+    const hash = b64 ? Buffer.from(b64, 'base64').toString('utf8') : process.env.ADMIN_PASSWORD_HASH;
+    const user = process.env.ADMIN_USERNAME?.trim();
+    if (user && hash?.startsWith('scrypt$')) {
+      const exists = db.prepare('SELECT 1 FROM admins WHERE username = ?').get(user);
+      if (!exists) upsertAdmin(db, user, hash);
+    }
   }
   if (o.seed !== false) await seedIfEmpty(db, o.dataDir, o.seedImgDir ?? path.resolve('seed/img'));
 
