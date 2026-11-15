@@ -1,0 +1,132 @@
+PASS  [390/dark] menyu açılır  (27 məhsul)
+PASS  [390/dark] masa nömrəsi
+PASS  [390/dark] açıq/bağlı nişanı
+PASS  [390/dark] üfüqi daşma yoxdur (menyu)
+PASS  [390/dark] şrift fallback yoxdur (AZ)
+PASS  [390/dark] tab bölməyə keçir, başlıq sticky barın altında  ({"top":94.09375,"bar":60,"active":"Şorbalar"})
+PASS  [390/dark] diakritiksiz axtarış (cigirtma → çığırtma)
+PASS  [390/dark] axtarış: "dus" → Düşbərə
+PASS  [390/dark] üfüqi daşma yoxdur (axtarış)
+PASS  [390/dark] məhsul pəncərəsi açılır
+PASS  [390/dark] variant + əlavə + say qiyməti (2 × 10,50)  (21 ₼)
+PASS  [390/dark] səbət nişanı 2
+PASS  [390/dark] "hal-hazırda yoxdur" məhsulu əlavə olunmur
+PASS  [390/dark] sürətli əlavə: nişan 3
+PASS  [390/dark] səbətdə 2 sətir
+PASS  [390/dark] cəm + 10% xidmət (22,80 + 2,28)  (25,08₼)
+PASS  [390/dark] üfüqi daşma yoxdur (səbət)
+PASS  [390/dark] "Ofisianta göstər": masa, qeyd, cəm
+PASS  [390/dark] göstər ekranı bağlanır
+PASS  [390/dark] səbət localStorage-da qalır
+PASS  [390/dark] dil RU
+PASS  [390/dark] şrift fallback yoxdur (RU/kiril)
+PASS  [390/dark] dil EN
+PASS  [390/dark] tema dəyişir
+PASS  [390/dark] ofisiant slotu söndürülüb
+PASS  [390/dark] konsol xətası yoxdur
+PASS  [390/light] menyu açılır  (27 məhsul)
+PASS  [390/light] masa nömrəsi
+PASS  [390/light] açıq/bağlı nişanı
+PASS  [390/light] üfüqi daşma yoxdur (menyu)
+PASS  [390/light] şrift fallback yoxdur (AZ)
+PASS  [390/light] tab bölməyə keçir, başlıq sticky barın altında  ({"top":94.09375,"bar":60,"active":"Şorbalar"})
+PASS  [390/light] diakritiksiz axtarış (cigirtma → çığırtma)
+PASS  [390/light] axtarış: "dus" → Düşbərə
+PASS  [390/light] üfüqi daşma yoxdur (axtarış)
+PASS  [390/light] məhsul pəncərəsi açılır
+PASS  [390/light] variant + əlavə + say qiyməti (2 × 10,50)  (21 ₼)
+PASS  [390/light] səbət nişanı 2
+PASS  [390/light] "hal-hazırda yoxdur" məhsulu əlavə olunmur
+PASS  [390/light] sürətli əlavə: nişan 3
+PASS  [390/light] səbətdə 2 sətir
+PASS  [390/light] cəm + 10% xidmət (22,80 + 2,28)  (25,08₼)
+PASS  [390/light] üfüqi daşma yoxdur (səbət)
+PASS  [390/light] "Ofisianta göstər": masa, qeyd, cəm
+PASS  [390/light] göstər ekranı bağlanır
+PASS  [390/light] səbət localStorage-da qalır
+PASS  [390/light] dil RU
+PASS  [390/light] şrift fallback yoxdur (RU/kiril)
+PASS  [390/light] dil EN
+PASS  [390/light] tema dəyişir
+PASS  [390/light] ofisiant slotu söndürülüb
+PASS  [390/light] konsol xətası yoxdur
+PASS  [360/dark] menyu açılır  (27 məhsul)
+PASS  [360/dark] masa nömrəsi
+PASS  [360/dark] açıq/bağlı nişanı
+PASS  [360/dark] üfüqi daşma yoxdur (menyu)
+PASS  [360/dark] şrift fallback yoxdur (AZ)
+PASS  [360/dark] tab bölməyə keçir, başlıq sticky barın altında  ({"top":94.078125,"bar":60,"active":"Şorbalar"})
+PASS  [360/dark] diakritiksiz axtarış (cigirtma → çığırtma)
+PASS  [360/dark] axtarış: "dus" → Düşbərə
+PASS  [360/dark] üfüqi daşma yoxdur (axtarış)
+PASS  [360/dark] məhsul pəncərəsi açılır
+PASS  [360/dark] variant + əlavə + say qiyməti (2 × 10,50)  (21 ₼)
+PASS  [360/dark] səbət nişanı 2
+PASS  [360/dark] "hal-hazırda yoxdur" məhsulu əlavə olunmur
+PASS  [360/dark] sürətli əlavə: nişan 3
+PASS  [360/dark] səbətdə 2 sətir
+PASS  [360/dark] cəm + 10% xidmət (22,80 + 2,28)  (25,08₼)
+PASS  [360/dark] üfüqi daşma yoxdur (səbət)
+PASS  [360/dark] "Ofisianta göstər": masa, qeyd, cəm
+PASS  [360/dark] göstər ekranı bağlanır
+PASS  [360/dark] səbət localStorage-da qalır
+PASS  [360/dark] dil RU
+PASS  [360/dark] şrift fallback yoxdur (RU/kiril)
+PASS  [360/dark] dil EN
+PASS  [360/dark] tema dəyişir
+PASS  [360/dark] ofisiant slotu söndürülüb
+PASS  [360/dark] konsol xətası yoxdur
+PASS  [360/light] menyu açılır  (27 məhsul)
+PASS  [360/light] masa nömrəsi
+PASS  [360/light] açıq/bağlı nişanı
+PASS  [360/light] üfüqi daşma yoxdur (menyu)
+PASS  [360/light] şrift fallback yoxdur (AZ)
+PASS  [360/light] tab bölməyə keçir, başlıq sticky barın altında  ({"top":94.078125,"bar":60,"active":"Şorbalar"})
+PASS  [360/light] diakritiksiz axtarış (cigirtma → çığırtma)
+PASS  [360/light] axtarış: "dus" → Düşbərə
+PASS  [360/light] üfüqi daşma yoxdur (axtarış)
+PASS  [360/light] məhsul pəncərəsi açılır
+PASS  [360/light] variant + əlavə + say qiyməti (2 × 10,50)  (21 ₼)
+PASS  [360/light] səbət nişanı 2
+PASS  [360/light] "hal-hazırda yoxdur" məhsulu əlavə olunmur
+PASS  [360/light] sürətli əlavə: nişan 3
+PASS  [360/light] səbətdə 2 sətir
+PASS  [360/light] cəm + 10% xidmət (22,80 + 2,28)  (25,08₼)
+PASS  [360/light] üfüqi daşma yoxdur (səbət)
+PASS  [360/light] "Ofisianta göstər": masa, qeyd, cəm
+PASS  [360/light] göstər ekranı bağlanır
+PASS  [360/light] səbət localStorage-da qalır
+PASS  [360/light] dil RU
+PASS  [360/light] şrift fallback yoxdur (RU/kiril)
+PASS  [360/light] dil EN
+PASS  [360/light] tema dəyişir
+PASS  [360/light] ofisiant slotu söndürülüb
+PASS  [360/light] konsol xətası yoxdur
+PASS  [offline] service worker ilə ikinci açılış: menyu  (27 məhsul)
+PASS  [offline] şəkillər cache-dən  ([true,true,true,true,true])
+PASS  [offline] masa nömrəsi
+PASS  [admin] yanlış parol rədd olunur
+PASS  [admin] giriş
+PASS  [admin] üfüqi daşma yoxdur (məhsullar)
+PASS  [admin] foto yüklənir
+PASS  [admin] məhsul yaradıldı
+PASS  [admin→menyu] yeni məhsul şəkli ilə görünür  ({"price":"7,50 ₼","img":true})
+PASS  [admin→menyu] qiymət dəyişməsi dərhal görünür  (2,20 ₼)
+PASS  [admin→menyu] "hal-hazırda yoxdur" keçidi
+PASS  [admin] kateqoriya sürüklə-sırala  (Yuxa ruletləri,Qutablar,Şorbalar)
+PASS  [admin→menyu] tab sırası dəyişdi  (Yuxa ruletləri,Qutablar)
+PASS  [admin] QR çap səhifəsi: hər masa üçün kart  (12/12)
+PASS  [admin] ofisiant keçidi söndürülüb və deaktivdir
+PASS  [admin] üfüqi daşma yoxdur (parametrlər)
+PASS  [admin] şrift fallback yoxdur
+PASS  [admin] konsol xətası yoxdur
+PASS  [admin→menyu] müştəri konsol xətası yoxdur
+PASS  [admin 360] daşma yoxdur: items
+PASS  [admin 360] daşma yoxdur: item/1
+PASS  [admin 360] daşma yoxdur: categories
+PASS  [admin 360] daşma yoxdur: features
+PASS  [admin 360] daşma yoxdur: tables
+PASS  [admin 360] daşma yoxdur: settings
+PASS  [admin 360] konsol xətası yoxdur
+
+130/130 keçdi

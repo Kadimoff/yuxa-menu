@@ -1,0 +1,9 @@
+{
+  "name": "Yuxa menyu",
+  "short_name": "Yuxa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0716",
+  "theme_color": "#0c0716",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

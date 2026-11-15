@@ -1,0 +1,18 @@
+# Coolify / Traefik üçün. Host portu açılmır: domen Coolify-da bu servisə (8787) bağlanır.
+services:
+  yuxa-menu:
+    build: .
+    restart: unless-stopped
+    expose:
+      - "8787"
+    environment:
+      NODE_ENV: production
+      COOKIE_SECURE: "1"
+      # İlk admin (hash `npm run admin:create -- --hash` ilə alınır). Boş qalsa, konteynerdə CLI ilə yaradın.
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-}
+      ADMIN_PASSWORD_HASH: ${ADMIN_PASSWORD_HASH:-}
+    volumes:
+      - yuxa-data:/app/data
+
+volumes:
+  yuxa-data:

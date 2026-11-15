@@ -1,0 +1,1 @@
+try{var d=document.documentElement,t=localStorage.getItem('yx.theme');if(t==='light'||t==='dark')d.dataset.theme=t;else{var c=localStorage.getItem('yx.dtheme');if(c==='light'||c==='dark')d.dataset.theme=c}var a=localStorage.getItem('yx.accent');if(a)d.dataset.accent=a;var l=localStorage.getItem('yx.lang');if(l)d.lang=l}catch(e){}
